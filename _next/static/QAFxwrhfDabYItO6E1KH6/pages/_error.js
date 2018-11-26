@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{295:function(n,r,e){__NEXT_REGISTER_PAGE("/_error",function(){return n.exports=e(296),{page:n.exports.default}})},296:function(n,r,e){"use strict";e.r(r);var t=e(0),o=e.n(t);r.default=function(){return o.a.createElement("p",null,"Error: Not Found!")}}},[[295,1,0]]]);
