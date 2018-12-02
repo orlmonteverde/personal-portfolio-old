@@ -42,13 +42,13 @@ footer {
   --dark: #0A0F0D;
   --light: #C4CBCA;
   --gutter: 2rem;
-  --banner-height: 110px;
+  --banner-height: 60px;
 }
 
 /* NAV */
 .logo {
   font-family: 'Roboto Mono', monospace;
-  font-size: 2em;
+  font-size: 1.5em;
   color: var(--light);
   text-shadow: 2px 2px 3px var(--dark);
   margin-left: var(--gutter);
@@ -57,7 +57,6 @@ footer {
 
 .main-nav {
   background-color: var(--secundary);
-  height: var(--banner-height);
   width: 100%;
   position: fixed;
   top: 0;
@@ -84,7 +83,7 @@ footer {
   list-style: none;
   background-color: ;
   padding: .5rem;
-  font-size: 1.6em;
+  font-size: 1.2em;
 }
 
 .nav-bar__link {
@@ -104,9 +103,9 @@ footer {
 /* Banner */
 .banner {
   width: 100%;
-  margin-top: var(--banner-height);
+  padding-top: var(--banner-height);
   --color: rgba(42, 30, 92, .4);
-  background: linear-gradient(var(--color), var(--color)), url(https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-0.3.5&s=4d30feeda26a687fb68098509a9a24c5&auto=format&fit=crop&w=1050&q=80) center / cover;
+  background: linear-gradient(var(--color), var(--color)), url(../imgs/hero.jpeg) center / cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 100vh;
@@ -120,29 +119,33 @@ footer {
 }
 
 .banner__img {
-  background-image: url(https://scontent-mia3-2.xx.fbcdn.net/v/t1.0-0/p206x206/388386_10200291752554615_1290930850_n.jpg?_nc_cat=0&oh=eb19ee72653ef9f1311375df6225748b&oe=5B6B317D);
+  background-color: #fff;
   background-position: center;
   width: 200px;
   height: 200px;
   border-radius: 150px;
   border: 5px solid #fff;
-
+  overflow: hidden; 
   margin-bottom: 2rem;
 }
 
-.banner__title, .banner__name {color: #fff;}
-
-.banner__name {
-  font-size: 2.5em;
+.banner__img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
-.banner__title {font-size: 2em;}
+
+.banner__title, .banner__name { color: #fff; }
+
+.banner__name { font-size: 2.5em; }
+
+.banner__title { font-size: 2em; }
 
 /* Social Media Widget */
 .social-media {
   background-color: var(--primary);
   border-radius: 0 5px 5px 0;
-  width: 100px;
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
@@ -157,14 +160,14 @@ footer {
 .social-media a {
   text-decoration: none;
   display: block;
-  margin: .2rem;
+  margin: .2rem 1rem;
   color: #fff;
   transition: all .2s linear;
 }
 
-.social-media a:last-of-type {margin-bottom: 1rem;}
+.social-media a:last-of-type { margin-bottom: 1rem; }
 
-.social-media a:first-of-type {margin-top: 1rem;}
+.social-media a:first-of-type { margin-top: 1rem; }
 
 .social-media a:hover {
   transform: scale(1.2);
@@ -194,8 +197,9 @@ footer {
 }
 
 .skills__container img {
-  height: 90px;
-  width: auto;
+  height: auto;
+  width: 75%;
+  max-height: 90px;
 }
 
 .progress-bar {
